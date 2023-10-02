@@ -7,6 +7,7 @@ const postRoute = require("./routes/posts");
 const register = require ("./routes/auth")
 const login = require ("./routes/auth")
 
+
 const categoryRoute = require("./routes/categories");
 const cors = require ("cors");
 const multer = require("multer");
@@ -37,6 +38,7 @@ mongoose.connect(process.env.MONGO_URI,{
     console.log(err.message)
   });
   
+
 
 const upload = multer({ storage: storage });
 app.post("/api/upload", upload.single("file"), (req, res) => {
