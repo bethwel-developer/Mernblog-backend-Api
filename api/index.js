@@ -1,4 +1,5 @@
 
+
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
@@ -7,7 +8,6 @@ const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const register = require ("./routes/auth")
 const login = require ("./routes/auth")
-
 
 const categoryRoute = require("./routes/categories");
 const cors = require ("cors");
